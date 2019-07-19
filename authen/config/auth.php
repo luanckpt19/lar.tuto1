@@ -1,5 +1,7 @@
 <?php
 
+use App\Model\SellerModel;
+
 return [
 
     /*
@@ -44,8 +46,32 @@ return [
         'api' => [
             'driver' => 'token',
             'provider' => 'users',
-            'hash' => false,
+
         ],
+        'admin' => [
+            'driver' => 'session',
+            'provider' =>'admins'
+        ],
+        'admin-aqi' =>[
+            'driver'=>'token',
+            'provider'=>'admins'
+        ] ,
+         'seller' =>[
+            'driver'=>'session',
+            'provider'=>'sellers'
+        ],
+        'seller-aqi' =>[
+             'driver'=>'token',
+              'provider'=>'sellers'
+        ] ,
+        'shipper' =>[
+            'driver'=>'session',
+            'provider'=>'shippers'
+        ],
+        'shipper-aqi' =>[
+            'driver'=>'token',
+            'provider'=>'shippers'
+        ] ,
     ],
 
     /*
@@ -70,6 +96,18 @@ return [
             'driver' => 'eloquent',
             'model' => App\User::class,
         ],
+        'admins'=>[
+            'driver' => 'eloquent',
+            'model' => App\Model\AdminModel::class,
+        ],
+         'sellers'=>[
+            'driver' => 'eloquent',
+            'model' => App\Model\SellerModel::class,
+        ],
+         'shipper'=>[
+              'driver' => 'eloquent',
+                'model' => App\Model\ShipperModel::class,
+]
 
         // 'users' => [
         //     'driver' => 'database',
@@ -97,6 +135,21 @@ return [
             'provider' => 'users',
             'table' => 'password_resets',
             'expire' => 60,
+        ],
+        'admin'=>[
+            'provider' => 'admin',
+            'table' => 'password_resets',
+            'expire' => 15,
+        ],
+         'sellers'=>[
+              'provider' => 'sellers',
+              'table' => 'password_resets',
+              'expire' => 15,
+         ],
+        'shippers'=>[
+            'provider' => 'shippers',
+            'table' => 'password_resets',
+            'expire' => 15,
         ],
     ],
 

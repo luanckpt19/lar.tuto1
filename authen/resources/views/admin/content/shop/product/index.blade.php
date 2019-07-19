@@ -1,7 +1,7 @@
-@extends('admin.layouts.glace')
+@extends('admin.layouts.glance')
 @section('title')
-    thànhluânShop
+    Quản trị sản phẩm
 @endsection
 @section('content')
-    <h1> Quản trị sản phẩm </h1>
+    <h1> Quản trị sản phẩm</h1>
 @endsection

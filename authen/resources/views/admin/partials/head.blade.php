@@ -1,9 +1,9 @@
 
 <head>
     <title>@yield('title')</title>
-
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="Glance Design Dashboard Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
@@ -11,35 +11,35 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 
     <!-- Bootstrap Core CSS -->
-    <link href="{{ asset('admin_asset/css/bootstrap.css') }}"    rel='stylesheet' type='text/css' />
+    <link href="{{ asset('admin_assets/css/bootstrap.css') }}" rel='stylesheet' type='text/css' />
 
     <!-- Custom CSS -->
-    <link href="{{ asset('admin_asset/css/style.css') }}" rel='stylesheet' type='text/css' />
+    <link href="{{ asset('admin_assets/css/style.css') }}" rel='stylesheet' type='text/css' />
 
     <!-- font-awesome icons CSS -->
-    <link href="{{ asset('admin_asset/css/font-awesome.css') }}" rel="stylesheet">
+    <link href="{{ asset('admin_assets/css/font-awesome.css') }}" rel="stylesheet">
     <!-- //font-awesome icons CSS-->
 
     <!-- side nav css file -->
-    <link href='{{ asset('admin_asset/css/SidebarNav.min.css') }}' media='all' rel='stylesheet' type='text/css'/>
+    <link href='{{ asset('admin_assets/css/SidebarNav.min.css') }}' media='all' rel='stylesheet' type='text/css'/>
     <!-- //side nav css file -->
 
     <!-- js-->
-    <script src="{{ asset('admin_asset') }}"></script>
-    <script src="{{ asset('admin_asset/js/modernizr.custom.js') }}"></script>
+    <script src="{{ asset('admin_assets/js/jquery-1.11.1.min.js') }}"></script>
+    <script src="{{ asset('admin_assets/js/modernizr.custom.js') }}"></script>
 
     <!--webfonts-->
     <link href="//fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
     <!--//webfonts-->
 
     <!-- chart -->
-    <script src="{{ asset('admin_asset/js/Chart.js') }}"></script>
+    <script src="{{ asset('admin_assets/js/Chart.js') }}"></script>
     <!-- //chart -->
 
     <!-- Metis Menu -->
-    <script src="{{ asset('admin_asset/js/metisMenu.min.js') }}"></script>
-    <script src="{{ asset('admin_asset/js/custom.js') }}"></script>
-    <link href="{{ asset('admin_asset/css/custom.css') }}" rel="stylesheet">
+    <script src="{{ asset('admin_assets/js/metisMenu.min.js') }}"></script>
+    <script src="{{ asset('admin_assets/js/custom.js') }}"></script>
+    <link href="{{ asset('admin_assets/css/custom.css') }}" rel="stylesheet">
     <!--//Metis Menu -->
     <style>
         #chartdiv {
@@ -48,7 +48,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
         }
     </style>
     <!--pie-chart --><!-- index page sales reviews visitors pie chart -->
-    <script src="{{ asset('admin_asset/js/pie-chart.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('admin_assets/js/pie-chart.js') }}" type="text/javascript"></script>
     <script type="text/javascript">
 
         $(document).ready(function () {
@@ -89,8 +89,8 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
     <!-- //pie-chart --><!-- index page sales reviews visitors pie chart -->
 
     <!-- requried-jsfiles-for owl -->
-    <link href="{{ asset('admin_asset/css/owl.carousel.css') }}" rel="stylesheet">
-    <script src="{{ asset('admin_asset/js/owl.carousel.js') }}"></script>
+    <link href="{{ asset('admin_assets/css/owl.carousel.css') }}" rel="stylesheet">
+    <script src="{{ asset('admin_assets/js/owl.carousel.js') }}"></script>
     <script>
         $(document).ready(function() {
             $("#owl-demo").owlCarousel({
