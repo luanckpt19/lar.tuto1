@@ -21,7 +21,7 @@
                     </li>
                     <li class="treeview">
                         <a href="#">
-                            <i class="fa fa-laptop"></i>
+                            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
                             <span>Shop</span>
                             <i class="fa fa-angle-left pull-right"></i>
                         </a>
@@ -37,7 +37,7 @@
                     </li>
                     <li class="treeview">
                         <a href="#">
-                            <i class="fa fa-laptop"></i>
+                            <i class="fa fa-cart-plus" aria-hidden="true"></i>
                             <span>Order</span>
                             <i class="fa fa-angle-left pull-right"></i>
                         </a>
@@ -47,7 +47,7 @@
                     </li>
                     <li class="treeview">
                         <a href="#">
-                            <i class="fa fa-laptop"></i>
+                            <i class="fa fa-sticky-note-o" aria-hidden="true"></i>
                             <span>Content</span>
                             <i class="fa fa-angle-left pull-right"></i>
                         </a>
@@ -60,18 +60,7 @@
                     </li>
                     <li class="treeview">
                         <a href="#">
-                            <i class="fa fa-laptop"></i>
-                            <span>Menu</span>
-                            <i class="fa fa-angle-left pull-right"></i>
-                        </a>
-                        <ul class="treeview-menu">
-                            <li><a href="{{ url('/admin/menu') }}"><i class="fa fa-angle-right"></i> Menu</a></li>
-                            <li><a href="{{ url('/admin/menuitems') }}"><i class="fa fa-angle-right"></i> Menu items</a></li>
-                        </ul>
-                    </li>
-                    <li class="treeview">
-                        <a href="#">
-                            <i class="fa fa-laptop"></i>
+                            <i class="fa fa-user" aria-hidden="true"></i>
                             <span>Admin</span>
                             <i class="fa fa-angle-left pull-right"></i>
                         </a>

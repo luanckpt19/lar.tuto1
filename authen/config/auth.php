@@ -1,7 +1,5 @@
 <?php
 
-use App\Model\SellerModel;
-
 return [
 
     /*
@@ -42,36 +40,35 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
-
         'api' => [
             'driver' => 'token',
             'provider' => 'users',
-
         ],
         'admin' => [
             'driver' => 'session',
-            'provider' =>'admins'
+            'provider' => 'admins',
         ],
-        'admin-aqi' =>[
-            'driver'=>'token',
-            'provider'=>'admins'
-        ] ,
-         'seller' =>[
-            'driver'=>'session',
-            'provider'=>'sellers'
+        'admin-api' => [
+            'driver' => 'token',
+            'provider' => 'admins',
         ],
-        'seller-aqi' =>[
-             'driver'=>'token',
-              'provider'=>'sellers'
-        ] ,
-        'shipper' =>[
-            'driver'=>'session',
-            'provider'=>'shippers'
+        'seller' => [
+            'driver' => 'session',
+            'provider' => 'sellers',
         ],
-        'shipper-aqi' =>[
-            'driver'=>'token',
-            'provider'=>'shippers'
-        ] ,
+        'seller-api' => [
+            'driver' => 'token',
+            'provider' => 'sellers',
+        ],
+        'shipper' => [
+            'driver' => 'session',
+            'provider' => 'shippers',
+        ],
+        'shipper-api' => [
+            'driver' => 'token',
+            'provider' => 'shippers',
+        ],
+
     ],
 
     /*
@@ -96,18 +93,18 @@ return [
             'driver' => 'eloquent',
             'model' => App\User::class,
         ],
-        'admins'=>[
+        'admins' => [
             'driver' => 'eloquent',
             'model' => App\Model\AdminModel::class,
         ],
-         'sellers'=>[
+        'sellers' => [
             'driver' => 'eloquent',
             'model' => App\Model\SellerModel::class,
         ],
-         'shipper'=>[
-              'driver' => 'eloquent',
-                'model' => App\Model\ShipperModel::class,
-]
+        'shippers' => [
+            'driver' => 'eloquent',
+            'model' => App\Model\ShipperModel::class,
+        ]
 
         // 'users' => [
         //     'driver' => 'database',
@@ -136,17 +133,17 @@ return [
             'table' => 'password_resets',
             'expire' => 60,
         ],
-        'admin'=>[
-            'provider' => 'admin',
+        'admins' => [
+            'provider' => 'admins',
             'table' => 'password_resets',
             'expire' => 15,
         ],
-         'sellers'=>[
-              'provider' => 'sellers',
-              'table' => 'password_resets',
-              'expire' => 15,
-         ],
-        'shippers'=>[
+        'sellers' => [
+            'provider' => 'sellers',
+            'table' => 'password_resets',
+            'expire' => 15,
+        ],
+        'shippers' => [
             'provider' => 'shippers',
             'table' => 'password_resets',
             'expire' => 15,

@@ -39,7 +39,6 @@ class Handler extends ExceptionHandler
     }
 
     /**
-     * Phương thức này sẽ redirect khi người dùng không xác thực
      * Render an exception into an HTTP response.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -51,26 +50,35 @@ class Handler extends ExceptionHandler
         return parent::render($request, $exception);
     }
 
+
+    /**
+     * Phương thức này sẽ redirect khi người dùng không xác thực
+     * @param \Illuminate\Http\Request $request
+     * @param AuthenticationException $exception
+     * @return \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response
+     */
     protected function unauthenticated($request, AuthenticationException $exception)
     {
-        if ($request->expectsJson()){
-            return response()->json(['error'=> 'Unauthenticated.'],401);
+        if ($request->expectsJson()) {
+            return response()->json(['error' => 'Unauthenticated.'], 401);
         }
-        $guard = array_get($exception->guards(),0);
-        switch ($guard){
+
+        $guard = array_get($exception->guards(), 0);
+        switch ($guard) {
             case 'admin' :
                 $login = 'admin.auth.login';
                 break;
-                case 'seller' :
+            case 'seller':
                 $login = 'seller.auth.login';
                 break;
-            case 'shipper' :
+            case 'shipper':
                 $login = 'shipper.auth.login';
                 break;
             default:
                 $login = 'login';
                 break;
         }
-        return redirect()->guest(route($login   ));
+
+        return redirect()->guest(route($login));
     }
 }
