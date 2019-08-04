@@ -70,17 +70,7 @@
                     </li>
                     <li class="treeview">
                         <a href="#">
-                            <i class="fa fa-laptop"></i>
-                            <span>Media manager</span>
-                            <i class="fa fa-angle-left pull-right"></i>
-                        </a>
-                        <ul class="treeview-menu">
-                            <li><a href="{{ url('/admin/media') }}"><i class="fa fa-angle-right"></i> Media manager</a></li>
-                        </ul>
-                    </li>
-                    <li class="treeview">
-                        <a href="#">
-                            <i class="fa fa-laptop"></i>
+                            <i class="fa fa-cog" aria-hidden="true"></i>
                             <span>Global settings</span>
                             <i class="fa fa-angle-left pull-right"></i>
                         </a>
@@ -90,7 +80,7 @@
                     </li>
                     <li class="treeview">
                         <a href="#">
-                            <i class="fa fa-laptop"></i>
+                            <i class="fa fa-newspaper-o" aria-hidden="true"></i>
                             <span>Newletters</span>
                             <i class="fa fa-angle-left pull-right"></i>
                         </a>
@@ -100,7 +90,7 @@
                     </li>
                     <li class="treeview">
                         <a href="#">
-                            <i class="fa fa-laptop"></i>
+                            <i class="fa fa-braille" aria-hidden="true"></i>
                             <span>Banners</span>
                             <i class="fa fa-angle-left pull-right"></i>
                         </a>
@@ -110,7 +100,7 @@
                     </li>
                     <li class="treeview">
                         <a href="#">
-                            <i class="fa fa-laptop"></i>
+                            <i class="fa fa-compress" aria-hidden="true"></i>
                             <span>Contact</span>
                             <i class="fa fa-angle-left pull-right"></i>
                         </a>
@@ -120,7 +110,7 @@
                     </li>
                     <li class="treeview">
                         <a href="#">
-                            <i class="fa fa-laptop"></i>
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
                             <span>Email</span>
                             <i class="fa fa-angle-left pull-right"></i>
                         </a>

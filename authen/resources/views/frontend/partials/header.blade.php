@@ -6,7 +6,8 @@
         <div class="col-md-6 phone-w3l">
             <ul>
                 <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></li>
-                <li>+18045403380</li>
+                <li>096842599<br></li>
+                <li>ThànhLuân</li>
             </ul>
         </div>
         <div class="clearfix"></div>

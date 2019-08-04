@@ -39,6 +39,10 @@
                 </div>
 
                 <div class="col-sm-offset-2">
+                    <input type="color" class="btn btn-success" name="favcolor">Màu sắc</input>
+                </div>
+
+                <div class="col-sm-offset-2">
                     <button type="submit" class="btn btn-success">Submit</button>
                 </div>
             </form>

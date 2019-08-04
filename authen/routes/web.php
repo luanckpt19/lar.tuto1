@@ -93,9 +93,20 @@ Route::prefix('admin')->group(function() {
     Route::post('shop/category/{id}/delete', 'Admin\ShopCategoryController@destroy');
 
 
-    Route::get('shop/product', function () {
-        return view('admin.content.shop.product.index');
-    });
+    /**
+     * ----------------- Route admin shopping product--------------------
+     * ---------------------------------------------------------
+     * ---------------------------------------------------------
+     */
+
+    Route::get('shop/product', 'Admin\ShopProductController@index');
+    Route::get('shop/product/create', 'Admin\ShopProductController@create');
+    Route::get('shop/product/{id}/edit', 'Admin\ShopProductController@edit');
+    Route::get('shop/product/{id}/delete', 'Admin\ShopProductController@delete');
+
+    Route::post('shop/product', 'Admin\ShopProductController@store');
+    Route::post('shop/product/{id}', 'Admin\ShopProductController@update');
+    Route::post('shop/product/{id}/delete', 'Admin\ShopProductController@destroy');
 
     Route::get('shop/order', function () {
         return view('admin.content.shop.order.index');

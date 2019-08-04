@@ -15,7 +15,7 @@
                 <tr>
                     <th>#</th>
                     <th>Tên</th>
-                    <th>Slug</th>
+                    <th>slug</th>
                     <th>Images</th>
                     <th>Actions</th>
                 </tr>
@@ -31,7 +31,6 @@
                         <td>
                             <a href="{{ url('admin/shop/category/'.$cat->id.'/edit') }}" class="btn btn-warning">Sửa</a>
                             <a href="{{ url('admin/shop/category/'.$cat->id.'/delete ') }}" class="btn btn-danger">Xóa</a>
-                        </td>
                     </tr>
                 @endforeach
                 </tbody>
